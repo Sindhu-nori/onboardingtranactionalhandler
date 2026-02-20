@@ -681,6 +681,35 @@
   },
   {
     "name": "org.springframework.boot.ApplicationProperties",
+    "fields": [
+      {
+        "name": "allowBeanDefinitionOverriding"
+      },
+      {
+        "name": "allowCircularReferences"
+      },
+      {
+        "name": "bannerMode"
+      },
+      {
+        "name": "keepAlive"
+      },
+      {
+        "name": "lazyInitialization"
+      },
+      {
+        "name": "logStartupInfo"
+      },
+      {
+        "name": "registerShutdownHook"
+      },
+      {
+        "name": "sources"
+      },
+      {
+        "name": "webApplicationType"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -899,6 +928,11 @@
     "name": "org.springframework.boot.autoconfigure.context.LifecycleProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "timeoutPerShutdownPhase"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -981,6 +1015,14 @@
     "name": "org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "pageable"
+      },
+      {
+        "name": "sort"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -998,6 +1040,32 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties$Pageable",
+    "fields": [
+      {
+        "name": "defaultPageSize"
+      },
+      {
+        "name": "maxPageSize"
+      },
+      {
+        "name": "oneIndexedParameters"
+      },
+      {
+        "name": "pageParameter"
+      },
+      {
+        "name": "prefix"
+      },
+      {
+        "name": "qualifierDelimiter"
+      },
+      {
+        "name": "serializationMode"
+      },
+      {
+        "name": "sizeParameter"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1087,6 +1155,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties$Sort",
+    "fields": [
+      {
+        "name": "sortParameter"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1152,6 +1225,23 @@
     "name": "org.springframework.boot.autoconfigure.http.client.HttpClientProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "connectTimeout"
+      },
+      {
+        "name": "factory"
+      },
+      {
+        "name": "readTimeout"
+      },
+      {
+        "name": "redirects"
+      },
+      {
+        "name": "ssl"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1205,6 +1295,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.http.client.HttpClientProperties$Ssl",
+    "fields": [
+      {
+        "name": "bundle"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1307,6 +1402,14 @@
     "name": "org.springframework.boot.autoconfigure.info.ProjectInfoProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "build"
+      },
+      {
+        "name": "git"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1324,6 +1427,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.info.ProjectInfoProperties$Build",
+    "fields": [
+      {
+        "name": "encoding"
+      },
+      {
+        "name": "location"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1353,6 +1464,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.info.ProjectInfoProperties$Git",
+    "fields": [
+      {
+        "name": "encoding"
+      },
+      {
+        "name": "location"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1500,6 +1619,50 @@
     "allDeclaredFields": true,
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "constructorDetector"
+      },
+      {
+        "name": "datatype"
+      },
+      {
+        "name": "dateFormat"
+      },
+      {
+        "name": "defaultLeniency"
+      },
+      {
+        "name": "defaultPropertyInclusion"
+      },
+      {
+        "name": "deserialization"
+      },
+      {
+        "name": "generator"
+      },
+      {
+        "name": "locale"
+      },
+      {
+        "name": "mapper"
+      },
+      {
+        "name": "parser"
+      },
+      {
+        "name": "propertyNamingStrategy"
+      },
+      {
+        "name": "serialization"
+      },
+      {
+        "name": "timeZone"
+      },
+      {
+        "name": "visibility"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1607,6 +1770,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.jackson.JacksonProperties$Datatype",
+    "fields": [
+      {
+        "name": "jsonNode"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1630,6 +1798,41 @@
     "name": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "classLoader"
+      },
+      {
+        "name": "driverClassName"
+      },
+      {
+        "name": "embeddedDatabaseConnection"
+      },
+      {
+        "name": "generateUniqueName"
+      },
+      {
+        "name": "jndiName"
+      },
+      {
+        "name": "name"
+      },
+      {
+        "name": "password"
+      },
+      {
+        "name": "type"
+      },
+      {
+        "name": "url"
+      },
+      {
+        "name": "username"
+      },
+      {
+        "name": "xa"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1749,6 +1952,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$Xa",
+    "fields": [
+      {
+        "name": "dataSourceClassName"
+      },
+      {
+        "name": "properties"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1827,6 +2038,14 @@
     "name": "org.springframework.boot.autoconfigure.security.SecurityProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "filter"
+      },
+      {
+        "name": "user"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1844,6 +2063,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.security.SecurityProperties$Filter",
+    "fields": [
+      {
+        "name": "dispatcherTypes"
+      },
+      {
+        "name": "order"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -1873,6 +2100,20 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.security.SecurityProperties$User",
+    "fields": [
+      {
+        "name": "name"
+      },
+      {
+        "name": "password"
+      },
+      {
+        "name": "passwordGenerated"
+      },
+      {
+        "name": "roles"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2011,6 +2252,35 @@
     "name": "org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "continueOnError"
+      },
+      {
+        "name": "dataLocations"
+      },
+      {
+        "name": "encoding"
+      },
+      {
+        "name": "mode"
+      },
+      {
+        "name": "password"
+      },
+      {
+        "name": "platform"
+      },
+      {
+        "name": "schemaLocations"
+      },
+      {
+        "name": "separator"
+      },
+      {
+        "name": "username"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2125,6 +2395,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.JksSslBundleProperties",
+    "fields": [
+      {
+        "name": "keystore"
+      },
+      {
+        "name": "truststore"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2142,6 +2420,20 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.JksSslBundleProperties$Store",
+    "fields": [
+      {
+        "name": "location"
+      },
+      {
+        "name": "password"
+      },
+      {
+        "name": "provider"
+      },
+      {
+        "name": "type"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2191,6 +2483,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.PemSslBundleProperties",
+    "fields": [
+      {
+        "name": "keystore"
+      },
+      {
+        "name": "truststore"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2208,6 +2508,23 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.PemSslBundleProperties$Store",
+    "fields": [
+      {
+        "name": "certificate"
+      },
+      {
+        "name": "privateKey"
+      },
+      {
+        "name": "privateKeyPassword"
+      },
+      {
+        "name": "type"
+      },
+      {
+        "name": "verifyKeys"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2297,6 +2614,20 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.SslBundleProperties",
+    "fields": [
+      {
+        "name": "key"
+      },
+      {
+        "name": "options"
+      },
+      {
+        "name": "protocol"
+      },
+      {
+        "name": "reloadOnUpdate"
+      }
+    ],
     "methods": [
       {
         "name": "getKey",
@@ -2330,6 +2661,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.SslBundleProperties$Key",
+    "fields": [
+      {
+        "name": "alias"
+      },
+      {
+        "name": "password"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2359,6 +2698,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.SslBundleProperties$Options",
+    "fields": [
+      {
+        "name": "ciphers"
+      },
+      {
+        "name": "enabledProtocols"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2394,6 +2741,11 @@
     "name": "org.springframework.boot.autoconfigure.ssl.SslProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "bundle"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2407,6 +2759,17 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.SslProperties$Bundles",
+    "fields": [
+      {
+        "name": "jks"
+      },
+      {
+        "name": "pem"
+      },
+      {
+        "name": "watch"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2428,6 +2791,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.SslProperties$Bundles$Watch",
+    "fields": [
+      {
+        "name": "file"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2441,6 +2809,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.ssl.SslProperties$Bundles$Watch$File",
+    "fields": [
+      {
+        "name": "quietPeriod"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2478,6 +2851,20 @@
     "name": "org.springframework.boot.autoconfigure.task.TaskExecutionProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "pool"
+      },
+      {
+        "name": "shutdown"
+      },
+      {
+        "name": "simple"
+      },
+      {
+        "name": "threadNamePrefix"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2509,6 +2896,26 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.task.TaskExecutionProperties$Pool",
+    "fields": [
+      {
+        "name": "allowCoreThreadTimeout"
+      },
+      {
+        "name": "coreSize"
+      },
+      {
+        "name": "keepAlive"
+      },
+      {
+        "name": "maxSize"
+      },
+      {
+        "name": "queueCapacity"
+      },
+      {
+        "name": "shutdown"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2572,6 +2979,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.task.TaskExecutionProperties$Pool$Shutdown",
+    "fields": [
+      {
+        "name": "acceptTasksAfterContextClose"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2591,6 +3003,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.task.TaskExecutionProperties$Shutdown",
+    "fields": [
+      {
+        "name": "awaitTermination"
+      },
+      {
+        "name": "awaitTerminationPeriod"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2620,6 +3040,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.task.TaskExecutionProperties$Simple",
+    "fields": [
+      {
+        "name": "concurrencyLimit"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2745,6 +3170,20 @@
     "name": "org.springframework.boot.autoconfigure.task.TaskSchedulingProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "pool"
+      },
+      {
+        "name": "shutdown"
+      },
+      {
+        "name": "simple"
+      },
+      {
+        "name": "threadNamePrefix"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2776,6 +3215,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.task.TaskSchedulingProperties$Pool",
+    "fields": [
+      {
+        "name": "size"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2795,6 +3239,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.task.TaskSchedulingProperties$Shutdown",
+    "fields": [
+      {
+        "name": "awaitTermination"
+      },
+      {
+        "name": "awaitTerminationPeriod"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2824,6 +3276,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.task.TaskSchedulingProperties$Simple",
+    "fields": [
+      {
+        "name": "concurrencyLimit"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -2914,6 +3371,14 @@
     "name": "org.springframework.boot.autoconfigure.transaction.TransactionProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "defaultTimeout"
+      },
+      {
+        "name": "rollbackOnCommitFailure"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3095,6 +3560,29 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ErrorProperties",
+    "fields": [
+      {
+        "name": "includeBindingErrors"
+      },
+      {
+        "name": "includeException"
+      },
+      {
+        "name": "includeMessage"
+      },
+      {
+        "name": "includePath"
+      },
+      {
+        "name": "includeStacktrace"
+      },
+      {
+        "name": "path"
+      },
+      {
+        "name": "whitelabel"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3168,6 +3656,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ErrorProperties$Whitelabel",
+    "fields": [
+      {
+        "name": "enabled"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3189,6 +3682,59 @@
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "address"
+      },
+      {
+        "name": "compression"
+      },
+      {
+        "name": "error"
+      },
+      {
+        "name": "forwardHeadersStrategy"
+      },
+      {
+        "name": "http2"
+      },
+      {
+        "name": "jetty"
+      },
+      {
+        "name": "maxHttpRequestHeaderSize"
+      },
+      {
+        "name": "mimeMappings"
+      },
+      {
+        "name": "netty"
+      },
+      {
+        "name": "port"
+      },
+      {
+        "name": "reactive"
+      },
+      {
+        "name": "serverHeader"
+      },
+      {
+        "name": "servlet"
+      },
+      {
+        "name": "shutdown"
+      },
+      {
+        "name": "ssl"
+      },
+      {
+        "name": "tomcat"
+      },
+      {
+        "name": "undertow"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3314,6 +3860,29 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Jetty",
+    "fields": [
+      {
+        "name": "accesslog"
+      },
+      {
+        "name": "connectionIdleTimeout"
+      },
+      {
+        "name": "maxConnections"
+      },
+      {
+        "name": "maxFormKeys"
+      },
+      {
+        "name": "maxHttpFormPostSize"
+      },
+      {
+        "name": "maxHttpResponseHeaderSize"
+      },
+      {
+        "name": "threads"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3381,6 +3950,32 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Jetty$Accesslog",
+    "fields": [
+      {
+        "name": "append"
+      },
+      {
+        "name": "customFormat"
+      },
+      {
+        "name": "enabled"
+      },
+      {
+        "name": "fileDateFormat"
+      },
+      {
+        "name": "filename"
+      },
+      {
+        "name": "format"
+      },
+      {
+        "name": "ignorePaths"
+      },
+      {
+        "name": "retentionPeriod"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3451,7 +4046,7 @@
       {
         "name": "setFormat",
         "parameterTypes": [
-          "org.springframework.boot.autoconfigure.web.ServerProperties$Jetty$Accesslog$FORMAT"
+          "org.springframework.boot.autoconfigure.web.ServerProperties$Jetty$Accesslog$Format"
         ]
       },
       {
@@ -3470,6 +4065,26 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Jetty$Threads",
+    "fields": [
+      {
+        "name": "acceptors"
+      },
+      {
+        "name": "idleTimeout"
+      },
+      {
+        "name": "max"
+      },
+      {
+        "name": "maxQueueCapacity"
+      },
+      {
+        "name": "min"
+      },
+      {
+        "name": "selectors"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3539,6 +4154,29 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Netty",
+    "fields": [
+      {
+        "name": "connectionTimeout"
+      },
+      {
+        "name": "h2cMaxContentLength"
+      },
+      {
+        "name": "idleTimeout"
+      },
+      {
+        "name": "initialBufferSize"
+      },
+      {
+        "name": "maxInitialLineLength"
+      },
+      {
+        "name": "maxKeepAliveRequests"
+      },
+      {
+        "name": "validateHeaders"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3618,6 +4256,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Reactive",
+    "fields": [
+      {
+        "name": "session"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3631,6 +4274,17 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Reactive$Session",
+    "fields": [
+      {
+        "name": "cookie"
+      },
+      {
+        "name": "maxSessions"
+      },
+      {
+        "name": "timeout"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3664,6 +4318,29 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Servlet",
+    "fields": [
+      {
+        "name": "applicationDisplayName"
+      },
+      {
+        "name": "contextParameters"
+      },
+      {
+        "name": "contextPath"
+      },
+      {
+        "name": "encoding"
+      },
+      {
+        "name": "jsp"
+      },
+      {
+        "name": "registerDefaultServlet"
+      },
+      {
+        "name": "session"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3719,6 +4396,83 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat",
+    "fields": [
+      {
+        "name": "acceptCount"
+      },
+      {
+        "name": "accesslog"
+      },
+      {
+        "name": "additionalTldSkipPatterns"
+      },
+      {
+        "name": "backgroundProcessorDelay"
+      },
+      {
+        "name": "basedir"
+      },
+      {
+        "name": "connectionTimeout"
+      },
+      {
+        "name": "keepAliveTimeout"
+      },
+      {
+        "name": "maxConnections"
+      },
+      {
+        "name": "maxHttpFormPostSize"
+      },
+      {
+        "name": "maxHttpResponseHeaderSize"
+      },
+      {
+        "name": "maxKeepAliveRequests"
+      },
+      {
+        "name": "maxPartCount"
+      },
+      {
+        "name": "maxPartHeaderSize"
+      },
+      {
+        "name": "maxSwallowSize"
+      },
+      {
+        "name": "mbeanregistry"
+      },
+      {
+        "name": "processorCache"
+      },
+      {
+        "name": "redirectContextRoot"
+      },
+      {
+        "name": "relaxedPathChars"
+      },
+      {
+        "name": "relaxedQueryChars"
+      },
+      {
+        "name": "remoteip"
+      },
+      {
+        "name": "resource"
+      },
+      {
+        "name": "threads"
+      },
+      {
+        "name": "uriEncoding"
+      },
+      {
+        "name": "useApr"
+      },
+      {
+        "name": "useRelativeRedirects"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -3766,6 +4520,14 @@
       },
       {
         "name": "getMaxKeepAliveRequests",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "getMaxPartCount",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "getMaxPartHeaderSize",
         "parameterTypes": [ ]
       },
       {
@@ -3877,6 +4639,18 @@
         ]
       },
       {
+        "name": "setMaxPartCount",
+        "parameterTypes": [
+          "int"
+        ]
+      },
+      {
+        "name": "setMaxPartHeaderSize",
+        "parameterTypes": [
+          "org.springframework.util.unit.DataSize"
+        ]
+      },
+      {
         "name": "setMaxSwallowSize",
         "parameterTypes": [
           "org.springframework.util.unit.DataSize"
@@ -3928,6 +4702,59 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Accesslog",
+    "fields": [
+      {
+        "name": "buffered"
+      },
+      {
+        "name": "checkExists"
+      },
+      {
+        "name": "conditionIf"
+      },
+      {
+        "name": "conditionUnless"
+      },
+      {
+        "name": "directory"
+      },
+      {
+        "name": "enabled"
+      },
+      {
+        "name": "encoding"
+      },
+      {
+        "name": "fileDateFormat"
+      },
+      {
+        "name": "ipv6Canonical"
+      },
+      {
+        "name": "locale"
+      },
+      {
+        "name": "maxDays"
+      },
+      {
+        "name": "pattern"
+      },
+      {
+        "name": "prefix"
+      },
+      {
+        "name": "renameOnRotate"
+      },
+      {
+        "name": "requestAttributesEnabled"
+      },
+      {
+        "name": "rotate"
+      },
+      {
+        "name": "suffix"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -4107,6 +4934,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Mbeanregistry",
+    "fields": [
+      {
+        "name": "enabled"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -4126,6 +4958,29 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Remoteip",
+    "fields": [
+      {
+        "name": "hostHeader"
+      },
+      {
+        "name": "internalProxies"
+      },
+      {
+        "name": "portHeader"
+      },
+      {
+        "name": "protocolHeader"
+      },
+      {
+        "name": "protocolHeaderHttpsValue"
+      },
+      {
+        "name": "remoteIpHeader"
+      },
+      {
+        "name": "trustedProxies"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -4205,6 +5060,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Resource",
+    "fields": [
+      {
+        "name": "allowCaching"
+      },
+      {
+        "name": "cacheTtl"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -4234,6 +5097,17 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Tomcat$Threads",
+    "fields": [
+      {
+        "name": "max"
+      },
+      {
+        "name": "maxQueueCapacity"
+      },
+      {
+        "name": "minSpare"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -4273,6 +5147,59 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow",
+    "fields": [
+      {
+        "name": "accesslog"
+      },
+      {
+        "name": "allowEncodedSlash"
+      },
+      {
+        "name": "alwaysSetKeepAlive"
+      },
+      {
+        "name": "bufferSize"
+      },
+      {
+        "name": "decodeSlash"
+      },
+      {
+        "name": "decodeUrl"
+      },
+      {
+        "name": "directBuffers"
+      },
+      {
+        "name": "eagerFilterInit"
+      },
+      {
+        "name": "maxCookies"
+      },
+      {
+        "name": "maxHeaders"
+      },
+      {
+        "name": "maxHttpPostSize"
+      },
+      {
+        "name": "maxParameters"
+      },
+      {
+        "name": "noRequestTimeout"
+      },
+      {
+        "name": "options"
+      },
+      {
+        "name": "preservePathOnForward"
+      },
+      {
+        "name": "threads"
+      },
+      {
+        "name": "urlCharset"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -4434,6 +5361,26 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow$Accesslog",
+    "fields": [
+      {
+        "name": "dir"
+      },
+      {
+        "name": "enabled"
+      },
+      {
+        "name": "pattern"
+      },
+      {
+        "name": "prefix"
+      },
+      {
+        "name": "rotate"
+      },
+      {
+        "name": "suffix"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -4503,6 +5450,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow$Options",
+    "fields": [
+      {
+        "name": "server"
+      },
+      {
+        "name": "socket"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -4520,6 +5475,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.ServerProperties$Undertow$Threads",
+    "fields": [
+      {
+        "name": "io"
+      },
+      {
+        "name": "worker"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -4776,6 +5739,29 @@
     "name": "org.springframework.boot.autoconfigure.web.servlet.MultipartProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "enabled"
+      },
+      {
+        "name": "fileSizeThreshold"
+      },
+      {
+        "name": "location"
+      },
+      {
+        "name": "maxFileSize"
+      },
+      {
+        "name": "maxRequestSize"
+      },
+      {
+        "name": "resolveLazily"
+      },
+      {
+        "name": "strictServletCompliance"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5023,6 +6009,53 @@
     "name": "org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "async"
+      },
+      {
+        "name": "contentnegotiation"
+      },
+      {
+        "name": "dispatchOptionsRequest"
+      },
+      {
+        "name": "dispatchTraceRequest"
+      },
+      {
+        "name": "format"
+      },
+      {
+        "name": "logRequestDetails"
+      },
+      {
+        "name": "logResolvedException"
+      },
+      {
+        "name": "messageCodesResolverFormat"
+      },
+      {
+        "name": "pathmatch"
+      },
+      {
+        "name": "problemdetails"
+      },
+      {
+        "name": "publishRequestHandledEvents"
+      },
+      {
+        "name": "servlet"
+      },
+      {
+        "name": "staticPathPattern"
+      },
+      {
+        "name": "view"
+      },
+      {
+        "name": "webjarsPathPattern"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5140,6 +6173,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Async",
+    "fields": [
+      {
+        "name": "requestTimeout"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5159,6 +6197,17 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Contentnegotiation",
+    "fields": [
+      {
+        "name": "favorParameter"
+      },
+      {
+        "name": "mediaTypes"
+      },
+      {
+        "name": "parameterName"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5198,6 +6247,17 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Format",
+    "fields": [
+      {
+        "name": "date"
+      },
+      {
+        "name": "dateTime"
+      },
+      {
+        "name": "time"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5237,6 +6297,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Pathmatch",
+    "fields": [
+      {
+        "name": "matchingStrategy"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5256,6 +6321,11 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Problemdetails",
+    "fields": [
+      {
+        "name": "enabled"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5275,6 +6345,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$Servlet",
+    "fields": [
+      {
+        "name": "loadOnStartup"
+      },
+      {
+        "name": "path"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5312,6 +6390,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties$View",
+    "fields": [
+      {
+        "name": "prefix"
+      },
+      {
+        "name": "suffix"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5355,6 +6441,17 @@
     "name": "org.springframework.boot.autoconfigure.web.WebProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "locale"
+      },
+      {
+        "name": "localeResolver"
+      },
+      {
+        "name": "resources"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5388,6 +6485,20 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.WebProperties$Resources",
+    "fields": [
+      {
+        "name": "addMappings"
+      },
+      {
+        "name": "cache"
+      },
+      {
+        "name": "chain"
+      },
+      {
+        "name": "staticLocations"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5425,6 +6536,17 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.WebProperties$Resources$Cache",
+    "fields": [
+      {
+        "name": "cachecontrol"
+      },
+      {
+        "name": "period"
+      },
+      {
+        "name": "useLastModified"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5458,6 +6580,38 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.WebProperties$Resources$Cache$Cachecontrol",
+    "fields": [
+      {
+        "name": "cachePrivate"
+      },
+      {
+        "name": "cachePublic"
+      },
+      {
+        "name": "maxAge"
+      },
+      {
+        "name": "mustRevalidate"
+      },
+      {
+        "name": "noCache"
+      },
+      {
+        "name": "noStore"
+      },
+      {
+        "name": "noTransform"
+      },
+      {
+        "name": "proxyRevalidate"
+      },
+      {
+        "name": "staleIfError"
+      },
+      {
+        "name": "staleWhileRevalidate"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5577,6 +6731,20 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain",
+    "fields": [
+      {
+        "name": "cache"
+      },
+      {
+        "name": "compressed"
+      },
+      {
+        "name": "enabled"
+      },
+      {
+        "name": "strategy"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5620,6 +6788,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy",
+    "fields": [
+      {
+        "name": "content"
+      },
+      {
+        "name": "fixed"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5637,6 +6813,14 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy$Content",
+    "fields": [
+      {
+        "name": "enabled"
+      },
+      {
+        "name": "paths"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -5666,6 +6850,17 @@
   },
   {
     "name": "org.springframework.boot.autoconfigure.web.WebProperties$Resources$Chain$Strategy$Fixed",
+    "fields": [
+      {
+        "name": "enabled"
+      },
+      {
+        "name": "paths"
+      },
+      {
+        "name": "version"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -6304,10 +7499,6 @@
     "allDeclaredConstructors": true
   },
   {
-    "name": "org.springframework.boot.web.context.ServletContextResourceFilePathResolver",
-    "allDeclaredConstructors": true
-  },
-  {
     "name": "org.springframework.boot.web.embedded.tomcat.ConnectorStartFailureAnalyzer",
     "allDeclaredConstructors": true
   },
@@ -6331,6 +7522,20 @@
   },
   {
     "name": "org.springframework.boot.web.server.Compression",
+    "fields": [
+      {
+        "name": "enabled"
+      },
+      {
+        "name": "excludedUserAgents"
+      },
+      {
+        "name": "mimeTypes"
+      },
+      {
+        "name": "minResponseSize"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -6384,6 +7589,32 @@
   },
   {
     "name": "org.springframework.boot.web.server.Cookie",
+    "fields": [
+      {
+        "name": "domain"
+      },
+      {
+        "name": "httpOnly"
+      },
+      {
+        "name": "maxAge"
+      },
+      {
+        "name": "name"
+      },
+      {
+        "name": "partitioned"
+      },
+      {
+        "name": "path"
+      },
+      {
+        "name": "sameSite"
+      },
+      {
+        "name": "secure"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -6493,6 +7724,11 @@
   },
   {
     "name": "org.springframework.boot.web.server.Http2",
+    "fields": [
+      {
+        "name": "enabled"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -6512,6 +7748,71 @@
   },
   {
     "name": "org.springframework.boot.web.server.Ssl",
+    "fields": [
+      {
+        "name": "bundle"
+      },
+      {
+        "name": "certificate"
+      },
+      {
+        "name": "certificatePrivateKey"
+      },
+      {
+        "name": "ciphers"
+      },
+      {
+        "name": "clientAuth"
+      },
+      {
+        "name": "enabled"
+      },
+      {
+        "name": "enabledProtocols"
+      },
+      {
+        "name": "keyAlias"
+      },
+      {
+        "name": "keyPassword"
+      },
+      {
+        "name": "keyStore"
+      },
+      {
+        "name": "keyStorePassword"
+      },
+      {
+        "name": "keyStoreProvider"
+      },
+      {
+        "name": "keyStoreType"
+      },
+      {
+        "name": "protocol"
+      },
+      {
+        "name": "serverNameBundles"
+      },
+      {
+        "name": "trustCertificate"
+      },
+      {
+        "name": "trustCertificatePrivateKey"
+      },
+      {
+        "name": "trustStore"
+      },
+      {
+        "name": "trustStorePassword"
+      },
+      {
+        "name": "trustStoreProvider"
+      },
+      {
+        "name": "trustStoreType"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -6762,6 +8063,10 @@
     ]
   },
   {
+    "name": "org.springframework.boot.web.servlet.context.ServletContextResourceFilePathResolver",
+    "allDeclaredConstructors": true
+  },
+  {
     "name": "org.springframework.boot.web.servlet.context.ServletWebServerApplicationContextFactory",
     "allDeclaredConstructors": true
   },
@@ -6811,6 +8116,23 @@
   },
   {
     "name": "org.springframework.boot.web.servlet.server.Encoding",
+    "fields": [
+      {
+        "name": "charset"
+      },
+      {
+        "name": "force"
+      },
+      {
+        "name": "forceRequest"
+      },
+      {
+        "name": "forceResponse"
+      },
+      {
+        "name": "mapping"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -6870,6 +8192,17 @@
   },
   {
     "name": "org.springframework.boot.web.servlet.server.Jsp",
+    "fields": [
+      {
+        "name": "className"
+      },
+      {
+        "name": "initParameters"
+      },
+      {
+        "name": "registered"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -6913,6 +8246,26 @@
   },
   {
     "name": "org.springframework.boot.web.servlet.server.Session",
+    "fields": [
+      {
+        "name": "cookie"
+      },
+      {
+        "name": "persistent"
+      },
+      {
+        "name": "sessionStoreDirectory"
+      },
+      {
+        "name": "storeDir"
+      },
+      {
+        "name": "timeout"
+      },
+      {
+        "name": "trackingModes"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -8305,6 +9658,17 @@
   },
   {
     "name": "org.springframework.util.MimeType",
+    "fields": [
+      {
+        "name": "parameters"
+      },
+      {
+        "name": "subtype"
+      },
+      {
+        "name": "type"
+      }
+    ],
     "methods": [
       {
         "name": "getCharset",
@@ -8721,6 +10085,17 @@
     "name": "ug.daes.OnBoardingTransactionHandler.conf.AppCorsProperties",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "allowedHeaders"
+      },
+      {
+        "name": "allowedMethods"
+      },
+      {
+        "name": "allowedOrigins"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
@@ -8762,6 +10137,44 @@
     "name": "ug.daes.OnBoardingTransactionHandler.conf.PropertiesConfiguration",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "fields": [
+      {
+        "name": "agentsNotification"
+      },
+      {
+        "name": "appConfig"
+      },
+      {
+        "name": "assistedOnboarding"
+      },
+      {
+        "name": "idpTokenValidation"
+      },
+      {
+        "name": "notification"
+      },
+      {
+        "name": "onboarding"
+      },
+      {
+        "name": "organization"
+      },
+      {
+        "name": "payment"
+      },
+      {
+        "name": "pricemodel"
+      },
+      {
+        "name": "raauthority"
+      },
+      {
+        "name": "signing"
+      },
+      {
+        "name": "verificationService"
+      }
+    ],
     "methods": [
       {
         "name": "<init>",
