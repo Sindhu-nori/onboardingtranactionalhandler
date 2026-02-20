@@ -1,14 +1,74 @@
+//plugins {
+//	id 'org.springframework.boot' version '3.4.5'
+//	id 'io.spring.dependency-management' version '1.1.7'
+//	id 'org.graalvm.buildtools.native' version '0.10.6'
+//	id 'java'
+//
+//	id 'eclipse'
+//}
+//
+//group = 'com.dtt.OnBoardingTransactionHandler'
+//version = '1.0.0' // You can change this as needed
+//
+//java {
+//	sourceCompatibility = JavaVersion.VERSION_21
+//	targetCompatibility = JavaVersion.VERSION_21
+//}
+//
+//repositories {
+//	mavenCentral()
+//	maven { url 'https://repo.spring.io/release' }
+//}
+//
+//dependencies {
+//	implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5'
+//
+//	implementation 'org.springframework.boot:spring-boot-starter-security'
+//	implementation 'org.springframework.security:spring-security-core:6.4.11'
+//implementation 'org.springframework.security:spring-security-config:6.4.11'
+//implementation 'org.springframework.security:spring-security-web:6.4.11'
+//
+//	implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+//	implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
+//	implementation 'jakarta.el:jakarta.el-api:5.0.1'
+//	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//	implementation('org.springframework.boot:spring-boot-starter-web') {
+//		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+//	}
+//	implementation 'org.springframework.boot:spring-boot-starter-undertow'
+//	implementation 'org.apache.httpcomponents:httpclient:4.5.14' // latest 4.5.x version
+//	implementation 'org.springframework.boot:spring-boot-devtools'
+//	implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0' // required for WAR packaging (if needed)
+//	implementation 'org.apache.httpcomponents:httpclient'
+//	implementation 'org.apache.httpcomponents.client5:httpclient5'
+//	implementation 'org.apache.httpcomponents.core5:httpcore5'
+//	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+//		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+//	}
+//
+//	// Version constraints for transitive dependencies to fix security vulnerabilities
+//	constraints {
+//		implementation 'ch.qos.logback:logback-core:1.5.25'
+//		implementation 'ch.qos.logback:logback-classic:1.5.25'
+//	}
+//}
+//configurations {
+//	all {
+//		exclude group: "commons-logging", module: "commons-logging"
+//	}
+//}
+
+
 plugins {
 	id 'org.springframework.boot' version '3.4.5'
 	id 'io.spring.dependency-management' version '1.1.7'
 	id 'org.graalvm.buildtools.native' version '0.10.6'
 	id 'java'
-
 	id 'eclipse'
 }
 
 group = 'com.dtt.OnBoardingTransactionHandler'
-version = '1.0.0' // You can change this as needed
+version = '1.0.0'
 
 java {
 	sourceCompatibility = JavaVersion.VERSION_21
@@ -20,38 +80,54 @@ repositories {
 	maven { url 'https://repo.spring.io/release' }
 }
 
+ext {
+	undertowVersion = '2.3.21.Final'
+}
+
 dependencies {
+
+	// Encryption
 	implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5'
 
+	// Spring Security (let Spring Boot manage versions)
 	implementation 'org.springframework.boot:spring-boot-starter-security'
-	implementation 'org.springframework.security:spring-security-core:6.4.11'
-implementation 'org.springframework.security:spring-security-config:6.4.11'
-implementation 'org.springframework.security:spring-security-web:6.4.11'
 
-	implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
-	implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
-	implementation 'jakarta.el:jakarta.el-api:5.0.1'
+	// Validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// JPA
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// Web without Tomcat
 	implementation('org.springframework.boot:spring-boot-starter-web') {
 		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
 	}
+
+	// Undertow (secured version)
 	implementation 'org.springframework.boot:spring-boot-starter-undertow'
-	implementation 'org.apache.httpcomponents:httpclient:4.5.14' // latest 4.5.x version
-	implementation 'org.springframework.boot:spring-boot-devtools'
-	implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0' // required for WAR packaging (if needed)
-	implementation 'org.apache.httpcomponents:httpclient'
+	implementation "io.undertow:undertow-core:${undertowVersion}"
+
+	// Apache HTTP Client (use only one version)
 	implementation 'org.apache.httpcomponents.client5:httpclient5'
-	implementation 'org.apache.httpcomponents.core5:httpcore5'
+
+	// Apache HTTP Client 4.x (compatible with your current code)
+	implementation 'org.apache.httpcomponents:httpclient:4.5.14'
+
+	// Dev tools
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+	// Testing
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-	
-	// Version constraints for transitive dependencies to fix security vulnerabilities
+
+	// Security constraint overrides
 	constraints {
 		implementation 'ch.qos.logback:logback-core:1.5.25'
 		implementation 'ch.qos.logback:logback-classic:1.5.25'
 	}
 }
+
 configurations {
 	all {
 		exclude group: "commons-logging", module: "commons-logging"

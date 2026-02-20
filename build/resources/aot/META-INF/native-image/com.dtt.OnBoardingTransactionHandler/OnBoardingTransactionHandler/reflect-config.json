@@ -5902,26 +5902,6 @@
     "allDeclaredConstructors": true
   },
   {
-    "name": "org.springframework.boot.devtools.env.DevToolsHomePropertiesPostProcessor",
-    "allDeclaredConstructors": true
-  },
-  {
-    "name": "org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor",
-    "allDeclaredConstructors": true
-  },
-  {
-    "name": "org.springframework.boot.devtools.logger.DevToolsLogFactory$Listener",
-    "allDeclaredConstructors": true
-  },
-  {
-    "name": "org.springframework.boot.devtools.restart.RestartApplicationListener",
-    "allDeclaredConstructors": true
-  },
-  {
-    "name": "org.springframework.boot.devtools.restart.RestartScopeInitializer",
-    "allDeclaredConstructors": true
-  },
-  {
     "name": "org.springframework.boot.diagnostics.analyzer.AotInitializerNotFoundFailureAnalyzer",
     "allDeclaredConstructors": true
   },
