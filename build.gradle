@@ -58,7 +58,6 @@
 //	}
 //}
 
-
 plugins {
 	id 'org.springframework.boot' version '3.4.7'
 	id 'io.spring.dependency-management' version '1.1.7'
@@ -77,7 +76,6 @@ java {
 
 repositories {
 	mavenCentral()
-	maven { url 'https://repo.spring.io/release' }
 }
 
 ext {
@@ -89,7 +87,7 @@ dependencies {
 	// Encryption
 	implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5'
 
-	// Spring Security (let Spring Boot manage versions)
+	// Security
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 
 	// Validation
@@ -103,15 +101,11 @@ dependencies {
 		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
 	}
 
-	// Undertow (secured version)
+	// Undertow
 	implementation 'org.springframework.boot:spring-boot-starter-undertow'
 	implementation "io.undertow:undertow-core:${undertowVersion}"
 
-	// Apache HTTP Client (use only one version)
 	implementation 'org.apache.httpcomponents.client5:httpclient5'
-
-	// Apache HTTP Client 4.x (compatible with your current code)
-	implementation 'org.apache.httpcomponents:httpclient:4.5.14'
 
 	// Dev tools
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
@@ -120,12 +114,6 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-
-
-
-		implementation 'ch.qos.logback:logback-core:1.5.25'
-		implementation 'ch.qos.logback:logback-classic:1.5.25'
-
 }
 
 configurations {
